@@ -6,11 +6,10 @@ using System.Threading.Tasks;
 
 namespace Max_Generics
 {
-    internal class Find_Max
+    internal class Find_Max<T> where T: IComparable
     {
-        public static void FindMaxValue(string first, string second, string third)
+        public void FindMaxValue(T first, T second, T third)
         {
-            //exmaple of test cases values: "cab","abc","bca"  "abc","cab","bca"  "abc","bca","cab"
             if (first.CompareTo(second) >= 0 && first.CompareTo(third) >= 0)
             {
                 Console.WriteLine("{0} is greater number out of {1} {2} {3}", first, first, second, third);
