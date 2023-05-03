@@ -8,9 +8,9 @@ namespace Max_Generics
 {
     internal class Find_Max
     {
-        public static void FindMaxValue(float first, float second, float third)
+        public static void FindMaxValue(string first, string second, string third)
         {
-            //exmaple of test cases values: 30.5,10.6,20.8  10.6,30.5,20.8  10.6,20.8,30.5
+            //exmaple of test cases values: "cab","abc","bca"  "abc","cab","bca"  "abc","bca","cab"
             if (first.CompareTo(second) >= 0 && first.CompareTo(third) >= 0)
             {
                 Console.WriteLine("{0} is greater number out of {1} {2} {3}", first, first, second, third);
