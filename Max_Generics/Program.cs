@@ -17,22 +17,22 @@ namespace Max_Generics
                     int first = Convert.ToInt32(Console.ReadLine());
                     int second = Convert.ToInt32(Console.ReadLine());
                     int third = Convert.ToInt32(Console.ReadLine());
-                    Find_Max<int> find = new Find_Max<int>();
-                    find.FindMaxValue(first, second, third);
+                    Find_Max<int> find = new Find_Max<int>(first, second, third);
+                    find.TestMaximum();
                     break;
                 case 2:
                     float a = Convert.ToSingle(Console.ReadLine());
                     float b = Convert.ToSingle(Console.ReadLine());
                     float c = Convert.ToSingle(Console.ReadLine());
-                    Find_Max<float> max = new Find_Max<float>();
-                    max.FindMaxValue(a, b, c);
+                    Find_Max<float> max = new Find_Max<float>(a, b, c);
+                    max.TestMaximum();
                     break;
                 case 3:
                     string x = Console.ReadLine();
                     string y = Console.ReadLine();
                     string z = Console.ReadLine();
-                    Find_Max<string> value = new Find_Max<string>();
-                    value.FindMaxValue(x, y, z);
+                    Find_Max<string> value = new Find_Max<string>(x, y, z);
+                    value.TestMaximum();
                     break;
             }
         }
